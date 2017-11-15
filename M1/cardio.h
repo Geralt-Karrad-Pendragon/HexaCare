@@ -1,0 +1,3 @@
+
+void temps();
+void pouls();
