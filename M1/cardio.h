@@ -1,3 +1,0 @@
-
-void temps();
-void pouls();
