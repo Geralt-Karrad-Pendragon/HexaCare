@@ -4,16 +4,16 @@
 
 int MenuLed(){
      int iChoix;
-     printf("1 : LED allumé en même temps\n");
-     printf("2 : LED 1 sur 2 allumé en même temps\n");
-     printf("3 : LED 1 sur 3 allumé en même temps\n");
-     printf("4 : LED allumé en chenille\n");
-     printf("5 : LED allumé en chenille 2 par 2\n");
-     printf("6 : LED allumé en chenille 3 par 3\n");
-     printf("7 : Choix de la LED allumé\n");
+     printf("1 : LED allumÃ© en mÃªme temps\n");
+     printf("2 : LED 1 sur 2 allumÃ© en mÃªme temps\n");
+     printf("3 : LED 1 sur 3 allumÃ© en mÃªme temps\n");
+     printf("4 : LED allumÃ© en chenille\n");
+     printf("5 : LED allumÃ© en chenille 2 par 2\n");
+     printf("6 : LED allumÃ© en chenille 3 par 3\n");
+     printf("7 : Choix de la LED allumÃ©\n");
      printf("0 : Quitter\n");
     scanf("%d", &iChoix);
-    switch(iChoix){
+    switch(iChoix){//menu d'allumage des LED
             case 1 :
                 return 1;
             break;
@@ -36,17 +36,17 @@ int MenuLed(){
                 return 7;
             break;
             case 0 :
-                printf("Merci d'avoir utilisé nos services et à bientôt !\n");
+                printf("Merci d'avoir utilisÃ© nos services et Ã  bientÃ´t !\n");
                 return 0;
             break;
             default :
-                printf("L'opération demandé n'est pas disponible, merci de choisir une autre opération.\n");
+                printf("L'opÃ©ration demandÃ© n'est pas disponible, merci de choisir une autre opÃ©ration.\n");
                 return 0;
             break;
         }
 }
 
-int ChoixLED(){
+int ChoixLED(){// fonction si le choix 7 est fait.
         int LED;
         printf("Quelle LED voulez-vous allumer ?\n");
         scanf("%d", &LED);
